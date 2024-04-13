@@ -22,13 +22,6 @@ RUN mkdir -p /app/.cache && chmod 777 /app/.cache
 # Copia todos os arquivos necessários para o diretório de trabalho
 COPY . .
 
-# Define as variáveis de ambiente para a conexão com o banco de dados
-ENV DB_HOST=dpg-cocmp0q0si5c73aln2bg-a.ohio-postgres.render.com
-ENV DB_PORT=5432
-ENV POSTGRES_USER=itzraiss
-ENV POSTGRES_PASSWORD=QNAqonq1Wi3Vfz6zE628ehQAZaPlgvf1
-ENV POSTGRES_DB=librechat
-
 # Define o comando para executar a aplicação
 CMD ["python", "main.py"]
 
