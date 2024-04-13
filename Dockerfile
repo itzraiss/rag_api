@@ -16,8 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Cria o diretório de uploads e define as permissões
 RUN mkdir -p /app/uploads && chmod 777 /app/uploads
 
-# Cria o diretório de cache para o Hugging Face e define as permissões
-RUN mkdir -p /app/.cache/huggingface && chmod 777 /app/.cache/huggingface
+# Cria o diretório de cache e define as permissões
+RUN mkdir -p /app/.cache && chmod 777 /app/.cache
 
 # Copia todos os arquivos necessários para o diretório de trabalho
 COPY . .
